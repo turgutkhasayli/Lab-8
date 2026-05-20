@@ -1,1 +1,241 @@
+<!DOCTYPE html>
+<html lang="az">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MedBook - Həkimlər</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            <i class="fa-solid fa-kit-medical"></i>
+            MedBook
+        </div>
+
+        <ul>
+            <li><a href="#">Ana Səhifə</a></li>
+            <li><a href="#" class="active">Həkimlər</a></li>
+            <li><a href="#">Xəstəxanalar</a></li>
+            <li><a href="#">Şöbələr</a></li>
+            <li><a href="#">Haqqımızda</a></li>
+            <li><a href="#">Əlaqə</a></li>
+        </ul>
+
+        <button class="appointment-btn">
+            <i class="fa-regular fa-calendar"></i>
+            Görüş Təyin Et
+        </button>
+
+    </nav>
+
+    <section class="hero">
+
+        <h1>Həkimlərimiz</h1>
+        <p>Mütəxəssis həkimlərlə tanış olun</p>
+
+    </section>
+
+    <section class="search-section">
+
+        <div class="search-box">
+
+            <div class="search-input">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input type="text" id="searchInput" placeholder="Həkim axtar...">
+
+            </div>
+
+            <div class="select-box">
+
+                <select id="specialityFilter">
+
+                    <option value="all">Bütün İxtisaslar</option>
+                    <option value="Kardioloq">Kardioloq</option>
+                    <option value="Nevroloq">Nevroloq</option>
+                    <option value="Pediatr">Pediatr</option>
+                    <option value="Ortoped">Ortoped</option>
+                    <option value="Dermatoloq">Dermatoloq</option>
+                    <option value="Oftalmoloq">Oftalmoloq</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="doctors" id="doctorList">
+
+        <div class="card" data-name="Aynur Məmmədova" data-speciality="Kardioloq">
+
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=1000&auto=format&fit=crop"
+                alt="doctor">
+
+            <div class="card-content">
+
+                <h2>Dr. Aynur Məmmədova</h2>
+
+                <div class="speciality">Kardioloq</div>
+
+                <div class="info">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Mərkəzi Klinika
+                </div>
+
+                <div class="rating">
+                    ⭐ 4.9 (127) &nbsp;&nbsp; 15 il təcrübə
+                </div>
+
+                <button class="book-btn gradient1">
+
+                    <i class="fa-regular fa-calendar"></i>
+                    Görüş Təyin Et
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="card" data-name="Elçin Həsənov" data-speciality="Nevroloq">
+
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=1000&auto=format&fit=crop"
+                alt="doctor">
+
+            <div class="card-content">
+
+                <h2>Dr. Elçin Həsənov</h2>
+
+                <div class="speciality">Nevroloq</div>
+
+                <div class="info">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Avromed Klinikası
+                </div>
+
+                <div class="rating">
+                    ⭐ 4.8 (98) &nbsp;&nbsp; 12 il təcrübə
+                </div>
+
+                <button class="book-btn gradient2">
+
+                    <i class="fa-regular fa-calendar"></i>
+                    Görüş Təyin Et
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="card" data-name="Günel Əliyeva" data-speciality="Pediatr">
+
+            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=1000&auto=format&fit=crop"
+                alt="doctor">
+
+            <div class="card-content">
+
+                <h2>Dr. Günel Əliyeva</h2>
+
+                <div class="speciality">Pediatr</div>
+
+                <div class="info">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Uşaq Xəstəxanası
+                </div>
+
+                <div class="rating">
+                    ⭐ 5.0 (156) &nbsp;&nbsp; 18 il təcrübə
+                </div>
+
+                <button class="book-btn gradient3">
+
+                    <i class="fa-regular fa-calendar"></i>
+                    Görüş Təyin Et
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+
+                <div class="footer-logo">
+
+                    <i class="fa-solid fa-kit-medical"></i>
+                    <span>MedBook</span>
+
+                </div>
+
+                <p>
+                    Onlayn həkim və xəstəxana rezervasiya platforması
+                </p>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Keçidlər</h3>
+
+                <a href="#">Ana Səhifə</a>
+                <a href="#">Həkimlər</a>
+                <a href="#">Xəstəxanalar</a>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Şöbələr</h3>
+
+                <a href="#">Bütün Şöbələr</a>
+                <a href="#">Haqqımızda</a>
+                <a href="#">Əlaqə</a>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Əlaqə</h3>
+
+                <p><i class="fa-solid fa-phone"></i> +994 12 555 55 55</p>
+
+                <p><i class="fa-solid fa-envelope"></i> info@medbook.az</p>
+
+                <p><i class="fa-solid fa-location-dot"></i> Bakı, Azərbaycan</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 MedBook. Bütün hüquqlar qorunur.
+
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
